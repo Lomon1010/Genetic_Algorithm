@@ -15,7 +15,7 @@ for i in range(DIGITS):
     j = random.choice(CHARS)
     PASSWORD.append(j)
 
-print("초깃값:", PASSWORD)
+print("초깃값:", PASSWORD, "\n")
 
 ### 개체 생성
 def create_chromosome():
