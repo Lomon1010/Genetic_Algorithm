@@ -81,7 +81,6 @@ def genetic_algorithm():
 
         population = next_generation
         generation += 1
-
     print("정답:", population[0], "세대:", generation)
 
 genetic_algorithm()
