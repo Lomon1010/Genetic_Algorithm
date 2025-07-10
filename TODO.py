@@ -14,12 +14,12 @@ def create_chromosome():
     chromosome = @@
     @@@ i in range(@@@@@@): # 비밀번호 길이만큼
         j = random.@@@@@@(CHARS) # CHARS에서 랜덤으로 하나 뽑기 * 비밀번호 자릿수
-        chromosome.append(j)
+        chromosome.append(@)
 
     return chromosome
 
 ### 초기 비밀번호 세팅
-PASSWORD = create_chromosome() # 개체 생성 함수 이용
+PASSWORD = @@@@@@_@@@@@@@@@@() # 개체 생성 함수 이용
 print("초깃값:", @@@@@@@@, "\n")
 
 ### 적합도 검사
@@ -80,4 +80,4 @@ def genetic_algorithm(): # 메인 함수
         @@@@@@@@@@ += 1 # 다음 스텝
     print("정답:", population[@], "세대:", @@@@@@@@@@) # 위의 작업이 끝나면 정답 말하기
 
-@@@@@@@@@@@@@@@@@@@ # 실행
+@@@@@@@_@@@@@@@@@@@ # 실행
