@@ -27,13 +27,7 @@ def fitness(password):
     for i in range(0, len(password)): # 어떤 임의의 비밀번호의 앞에서부터 쭉 훑음
         if password[i] == PASSWORD[i]: # 그 자리의 비밀번호가 동일하다면 +1점
             score += 1
-        '''
-        # 여기서부터는 적합도 함수의 응용
-        else:
-            if password[i] in PASSWORD: # 만일 해당 자리의 비밀번호가 틀렸지만 다른 위치에 존재할 때
-                score += 0.5 # 0.5점 가산점
-        '''
-
+            
     return score / len(password) * 100 # 총점 = 점수 / 길이 * 100, (ex) 4개가 동일 = 4점, 가능한 최대 점수 = 8점 따라서 4/8*100 = 50점 
 
 ### 상위 유전자 개체 2
