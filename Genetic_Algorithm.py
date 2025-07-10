@@ -32,8 +32,8 @@ def fitness(password):
 
 ### 상위 유전자 개체 2
 def select(pw):
-    a = sorted(pw, key=fitness, reverse=True)[:2] # 적합도 함수 점수를 바탕으로 만든 정렬기준을 통해 내림차 순으로 정리 후, 상위 2개 반환
-    return a
+    bests = sorted(pw, key=fitness, reverse=True)[:2] # 적합도 함수 점수를 바탕으로 만든 정렬기준을 통해 내림차 순으로 정리 후, 상위 2개 반환
+    return bests
 
 ### 유전자 선택
 def cross(g1, g2): 
